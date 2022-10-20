@@ -33,4 +33,5 @@ urlpatterns = [
         jwt_views.TokenRefreshView.as_view(),
         name="token_refresh",
     ),
+    path("api/v1/activejobs/", include("scraped_jobs.urls"))
 ]
