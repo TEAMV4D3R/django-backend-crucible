@@ -2,17 +2,17 @@ from rest_framework.generics import (
     ListCreateAPIView,
     RetrieveUpdateDestroyAPIView,
 )
-from .models import Thing
+from .models import Job
 from .permissions import IsOwnerOrReadOnly
-from .serializers import ThingSerializer
+from .serializers import JobSerializer
 
 
 class ThingList(ListCreateAPIView):
-    queryset = Thing.objects.all()
-    serializer_class = ThingSerializer
+    queryset = Job.objects.all()
+    serializer_class = JobSerializer
 
 
 class ThingDetail(RetrieveUpdateDestroyAPIView):
     permission_classes = (IsOwnerOrReadOnly,)
-    queryset = Thing.objects.all()
-    serializer_class = ThingSerializer
+    queryset = Job.objects.all()
+    serializer_class = JobSerializer

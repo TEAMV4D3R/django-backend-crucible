@@ -12,17 +12,9 @@ class Job(models.Model):
     owner = models.ForeignKey(
         get_user_model(), on_delete=models.CASCADE, null=True, blank=True
     )
-    description = models.TextField(default="", null=True, blank=True)
+    description = models.TextField(default="[]", null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True, blank=True)
     updated = models.DateTimeField(auto_now_add=True, blank=True)
 
     def __str__(self):
         return self.position
-
-class Notes(models.Model):
-    owner = models.ForeignKey(
-        get_user_model(), on_delete=models.CASCADE, null=True, blank=True
-    )
-    description = models.TextField(default="", null=True, blank=True)
-    created = models.DateTimeField(auto_now_add=True, blank=True)
-    updated = models.DateTimeField(auto_now_add=True, blank=True)
