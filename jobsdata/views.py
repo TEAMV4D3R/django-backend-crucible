@@ -7,12 +7,12 @@ from .permissions import IsOwnerOrReadOnly
 from .serializers import JobSerializer
 
 
-class ThingList(ListCreateAPIView):
+class JobList(ListCreateAPIView):
     queryset = Job.objects.all()
     serializer_class = JobSerializer
 
 
-class ThingDetail(RetrieveUpdateDestroyAPIView):
+class JobDetail(RetrieveUpdateDestroyAPIView):
     permission_classes = (IsOwnerOrReadOnly,)
     queryset = Job.objects.all()
     serializer_class = JobSerializer
