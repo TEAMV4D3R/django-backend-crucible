@@ -64,6 +64,8 @@ INSTALLED_APPS = [
     "things",
     "jobs_data",
     "scraped_jobs",
+    "boats",
+    "winnerwinner"
 ]
 
 MIDDLEWARE = [

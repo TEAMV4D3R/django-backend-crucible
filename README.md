@@ -23,3 +23,8 @@ Template Project for starting up CRUD API with Django Rest Framework
 - Run makemigrations and migrate commands
 - Run `collectstatic` if needed.
 - Optional: Update `api_tester.py`
+
+
+## Sources
+
+Django Model Inlines <https://www.jbssolutions.com/resources/blog/improve-djangos-admin-interface-using-inlines/>

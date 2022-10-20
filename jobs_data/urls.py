@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import ThingList, ThingDetail
+from .views import JobList, JobDetail
 
 urlpatterns = [
-    path("", ThingList.as_view(), name="job_list"),
-    path("<int:pk>/", ThingDetail.as_view(), name="job_detail"),
+    path("", JobList.as_view(), name="job_list"),
+    path("<int:pk>/", JobDetail.as_view(), name="job_detail"),
 ]
