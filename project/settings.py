@@ -63,6 +63,8 @@ INSTALLED_APPS = [
     "accounts",
     "things",
     "jobs_data",
+    "boats",
+    "winnerwinner"
     "scraped_jobs",
     "boats",
     "winnerwinner"
