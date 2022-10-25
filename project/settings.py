@@ -62,7 +62,8 @@ INSTALLED_APPS = [
     # local
     "accounts",
     "things",
-    "jobs_data"
+    "jobsdata",
+    "scraped_jobs"
 ]
 
 MIDDLEWARE = [
