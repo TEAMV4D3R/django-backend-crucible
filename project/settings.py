@@ -61,9 +61,8 @@ INSTALLED_APPS = [
     "corsheaders",
     # local
     "accounts",
-    "things",
     "jobsdata",
-    "scraped_jobs"
+    # "scraped_jobs"
 ]
 
 MIDDLEWARE = [
