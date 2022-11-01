@@ -1,5 +1,5 @@
 # Django User Notes Backend
-This is where we have created the data model for storing the user notes for their job search. The data model includes the scraped job position titles, locations, company, the job application URL and the time and date created. This backend has been containerized for deployment. This backend was created from a template for which the initialization information is below.
+This is where we have created the data model for storing the user notes for their job search. The data model includes and allows the user to store positions, locations, descriptions, employers, job statuses, notes, and timestamps for when the data was added to the database and updated. This backend has been containerized for deployment. This backend was created from a template for which the initialization information is below.
 
 ## api-quick-start
 
